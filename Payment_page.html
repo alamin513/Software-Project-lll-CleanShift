@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment system</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="home_css.css">
+    <link rel="stylesheet" href="payment.css"
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <a href="home.html" class="logo logo_clean" >Clean <span>Shift</span></a>
+
+    <ul> 
+        <a href="cleaning_service.html" class="service" style="color:black;">Services</a>
+        <a href="home.html">Blog</a>
+        <a href="about_us.html">About</a> 
+        <a href="#contact-popup">Contact us</a>
+    </ul>
+    <a href="signup.html" class="signUp">SignUp</a>
+
+
+    </div>
+    </div>
+    </header>
+
+    <main>
+        <div class="payment-container">
+            <h2>Payment Information</h2>
+            <form action="/submit-payment" method="post">
+                <div class="form-group">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" name="full-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="payment-method">Payment Method</label>
+                    <select id="payment-method" name="payment-method" required>
+                        <option value="bkash">bKash</option>
+                        <option value="rocket">Rocket</option>
+                        <option value="nagad">Nagad</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="transaction-id">Transaction ID</label>
+                    <input type="text" id="transaction-id" name="transaction-id" required>
+                </div>
+                <button type="submit" class="btn_submit">Submit Payment</button>
+            </form>
+        </div>
+    </main>
+
+    
+
+    <footer>
+        <div class="footer-container">
+            <div class="sec aboutus">
+                <h2>About Us</h2>
+                <p>CleanShift offers reliable and professional cleaning and shifting services in Dhaka, Bangladesh.
+                    With a team of experienced professionals, we ensure a hassle-free relocation experience and impeccable cleaning for homes and offices.
+                    Our services are tailored to meet customer needs, ensuring satisfaction.</p>
+                <ul class="sci">
+                    <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
+                    <li><a href="#"><i class="bx bxl-instagram"></i></a></li>
+                    <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
+                    <li><a href="#"><i class="bx bxl-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <div class="sec quicklinks">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a>About</a></li>
+                </ul>
+            </div>
+            <div class="sec contactBx">
+                <h2>Contact Info</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class='bx bxs-map'></i></span>
+                        <span>4/8 Dhaka street <br> Dhaka <br> Bangladesh</span>
+                    </li>
+                    <li>
+                        <span><i class='bx bx-envelope' ></i></span>
+                        <p><a href="clean-shift@gmail.com">clean-shift@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Contact Us Popup -->
+<div id="contact-popup" class="popup">
+    <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <h2>Contact Us</h2>
+        <form action="#">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="main.js"></script>
+
+
+
+</body>
+</html>
